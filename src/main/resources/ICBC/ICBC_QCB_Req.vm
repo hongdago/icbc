@@ -1,4 +1,4 @@
-#parse("${BANK}/Base.vm")
+#parse("${BANK}/${BANK}_Base.vm")
 <?xml version="1.0" encoding = "GBK"?>
 <CMS>
 <eb>

@@ -1,63 +1,66 @@
 package com.cfm.bankinterface.icbc;
 
-import org.apache.commons.validator.ValidatorResults;
-
 import com.cfm.bankinterface.RequestObj;
 
-public class ICBC_QCTRequest extends RequestObj {
+/**
+ * å·¥è¡ŒæŸ¥è¯¢å½“æ—¥äº¤æ˜“è¯·æ±‚å¯¹è±¡
+ * @author admin
+ *
+ */
+public class ICBC_QCT_Req extends RequestObj {
 
 	/**
-	 * ²éÑ¯ÕËºÅ(±ØÊä)
+	 * æŸ¥è¯¢è´¦å·(å¿…è¾“)
 	 */
 	private String acctno;
 
 	/**
-	 * µØÇø´úÂë(Ñ¡Êä)
+	 * åœ°åŒºä»£ç (é€‰è¾“)
 	 */
 	private String areaCode;
 
 	/**
-	 * ·¢Éú¶îÏÂÏŞ(±ØÊä)
+	 * å‘ç”Ÿé¢ä¸‹é™(å¿…è¾“)
 	 */
 	private String minAmt = "0";
 
 	/**
-	 * ·¢Éú¶îÉÏÏŞ (±ØÊä)
+	 * å‘ç”Ÿé¢ä¸Šé™ (å¿…è¾“)
 	 */
 	private String maxAmt = "0";
 
 	/**
-	 * ¿ªÊ¼Ê±¼ä(Ñ¡Êä)
+	 * å¼€å§‹æ—¶é—´(é€‰è¾“)
 	 */
 	private String beginTime;
 
 	/**
-	 * ½áÊøÊ±¼ä(Ñ¡Êä)
+	 * ç»“æŸæ—¶é—´(é€‰è¾“)
 	 */
 	private String endTime;
 
 	/**
-	 * ²éÑ¯ÏÂÒ³±êÊ¶(Ñ¡Êä)
+	 * æŸ¥è¯¢ä¸‹é¡µæ ‡è¯†(é€‰è¾“)
 	 */
 	private String nextTag;
 
 	/**
-	 * ÇëÇó°ü±¸ÓÃ×Ö¶Î1(Ñ¡Êä)
+	 * è¯·æ±‚åŒ…å¤‡ç”¨å­—æ®µ1(é€‰è¾“)
 	 */
 	private String reqReserved1;
 
 	/**
-	 * ÇëÇó°ü±¸ÓÃ×Ö¶Î2(Ñ¡Êä)
+	 * è¯·æ±‚åŒ…å¤‡ç”¨å­—æ®µ2(é€‰è¾“)
 	 */
 	private String reqReserved2;
 
 	/**
-	 * ±ÒÖÖ(Ñ¡Êä)
+	 * å¸ç§(é€‰è¾“)
 	 */
 	private String currno;
 
 	/**
-	 * ²éÑ¯ÕËºÅĞòºÅ(Ñ¡Êä)
+	 * æŸ¥è¯¢è´¦å·åºå·(é€‰è¾“)
 	 */
 	private String acctSqe;
 
@@ -149,11 +152,6 @@ public class ICBC_QCTRequest extends RequestObj {
 		this.acctSqe = acctSqe;
 	}
 
-	@Override
-	protected ValidatorResults validate() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	@Override
 	public String post() {

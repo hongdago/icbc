@@ -1,4 +1,4 @@
-#parse("${BANK}/Base.vm")
+#parse("${BANK}/${BANK}_Base.vm")
 <?xml version="1.0" encoding = "GBK"?>
 <CMS>
 <eb>
@@ -12,10 +12,10 @@
 <fSeqno>${system.seqno}</fSeqno>
 </pub>
 <in>
-<AccNo>${acctno}</AccNo>
+<AccNo>$!{acctno}</AccNo>
 <AreaCode>$!{areaCode}</AreaCode>
 <MinAmt>${minAmt}</MinAmt>
-<MaxAmt>${minAmt}</MaxAmt>
+<MaxAmt>${maxAmt}</MaxAmt>
 <BeginTime>$!{beginTime}</BeginTime>
 <EndTime>$!{endTime}</EndTime>
 <NextTag>$!{nextTag}</NextTag>

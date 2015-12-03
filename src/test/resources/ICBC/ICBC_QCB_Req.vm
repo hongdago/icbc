@@ -1,0 +1,30 @@
+#parse("${BANK}/${BANK}_Base.vm")
+<?xml version="1.0" encoding = "GBK"?>
+<CMS>
+<eb>
+<pub>
+<TransCode>QACCBAL</TransCode>
+<CIS>${CIS}</CIS>
+<BankCode>${BANKCODE}</BankCode>
+<ID>${CERTID}</ID>
+<TranDate>${system.tranDate}</TranDate>
+<TranTime>${system.tranTime}</TranTime>
+<fSeqno>${system.seqno}</fSeqno>
+</pub>
+<in>
+<TotalNum>${totalNum}</TotalNum>
+#foreach (${rd} in ${params} )
+<rd>
+<iSeqno>${velocityCount}</iSeqno>
+<AccNo>${rd.acctno}</AccNo>
+<CurrType>${rd.currno}</CurrType>
+<ReqReserved3>$!{rd.reqReserved}</ReqReserved3>
+<AcctSeq>$!{rd.acctSqe}</AcctSeq>
+</rd>
+#end
+</in>
+</eb>
+</CMS>
+
+
+

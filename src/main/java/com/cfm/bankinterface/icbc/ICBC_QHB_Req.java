@@ -1,33 +1,36 @@
 package com.cfm.bankinterface.icbc;
 
-import org.apache.commons.validator.ValidatorResults;
-
 import com.cfm.bankinterface.RequestObj;
 
-public class ICBC_QHBRequest extends RequestObj {
+/**
+ * å·¥è¡ŒæŸ¥è¯¢å†å²äº¤æ˜“è¯·æ±‚å¯¹è±¡
+ * @author admin
+ *
+ */
+public class ICBC_QHB_Req extends RequestObj {
 
 	/**
-	 * ÕË»§ºÅ
+	 * è´¦æˆ·å·
 	 */
 	private String acctno;
 
 	/**
-	 * ±ÒÖÖ
+	 * å¸ç§
 	 */
 	private String currno;
 
 	/**
-	 * ²éÑ¯¿ªÊ¼Ê±¼ä
+	 * æŸ¥è¯¢å¼€å§‹æ—¶é—´
 	 */
 	private String beginDate;
 
 	/**
-	 * ²éÑ¯½áÊøÈÕÆÚ
+	 * æŸ¥è¯¢ç»“æŸæ—¥æœŸ
 	 */
 	private String endDate;
 
 	/**
-	 * ÕËºÅĞòºÅ(Ñ¡ÊäÏî)
+	 * è´¦å·åºå·(é€‰è¾“é¡¹)
 	 */
 	private String acctSqe;
 
@@ -71,10 +74,6 @@ public class ICBC_QHBRequest extends RequestObj {
 		this.acctSqe = acctSqe;
 	}
 
-	@Override
-	protected ValidatorResults validate() {
-		return null;
-	}
 
 	@Override
 	public String post() {

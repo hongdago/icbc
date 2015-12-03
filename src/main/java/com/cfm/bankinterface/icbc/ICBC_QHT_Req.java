@@ -4,55 +4,55 @@ import org.apache.commons.validator.ValidatorResults;
 
 import com.cfm.bankinterface.RequestObj;
 
-public class ICBC_QHTRequest extends RequestObj {
+public class ICBC_QHT_Req extends RequestObj {
 
 	/**
-	 * ²éÑ¯ÕËºÅ(±ØÊä)
+	 * æŸ¥è¯¢è´¦å·(å¿…è¾“)
 	 */
 	private String acctno;
 
 	/**
-	 * ÆğÊ¼ÈÕÆÚ(±ØÊä)
+	 * èµ·å§‹æ—¥æœŸ(å¿…è¾“)
 	 */
 	private String beginDate;
 
 	/**
-	 * ½ØÖ¹ÈÕÆÚ(±ØÊä)
+	 * æˆªæ­¢æ—¥æœŸ(å¿…è¾“)
 	 */
 	private String endDate;
 
 	/**
-	 * ·¢Éú¶îÏÂÏŞ(Ñ¡Êä)
+	 * å‘ç”Ÿé¢ä¸‹é™(é€‰è¾“)
 	 */
 	private String minAmt;
 
 	/**
-	 * MaxAmt(Ñ¡Êä)
+	 * MaxAmt(é€‰è¾“)
 	 */
 	private String maxAmt;
 
 	/**
-	 * ĞĞ±ğ(Ñ¡Êä)
+	 * è¡Œåˆ«(é€‰è¾“)
 	 */
 	private String bankCtype;
 
 	/**
-	 * ²éÑ¯ÏÂÒ³±êÊ¶(Ñ¡Êä)
+	 * æŸ¥è¯¢ä¸‹é¡µæ ‡è¯†(é€‰è¾“)
 	 */
 	private String nextTag;
 
 	/**
-	 * ±ÒÖÖ(Ñ¡Êä)
+	 * å¸ç§(é€‰è¾“)
 	 */
 	private String currno;
 
 	/**
-	 * ½è¾İ±àºÅ(Ñ¡Êä)
+	 * å€Ÿæ®ç¼–å·(é€‰è¾“)
 	 */
 	private String dueBillNo;
 
 	/**
-	 * ²éÑ¯ÕËºÅĞòºÅ(Ñ¡Êä)
+	 * æŸ¥è¯¢è´¦å·åºå·(é€‰è¾“)
 	 */
 	private String acctSeq;
 
@@ -136,11 +136,6 @@ public class ICBC_QHTRequest extends RequestObj {
 		this.acctSeq = acctSeq;
 	}
 
-	@Override
-	protected ValidatorResults validate() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	@Override
 	public String post() {
