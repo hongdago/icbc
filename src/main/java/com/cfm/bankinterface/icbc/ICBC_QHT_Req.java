@@ -138,9 +138,8 @@ public class ICBC_QHT_Req extends RequestObj {
 
 
 	@Override
-	public String post() {
-		// TODO Auto-generated method stub
-		return null;
+	public String getTransCode() {
+		return "QHISD";
 	}
 
 }

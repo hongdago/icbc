@@ -76,8 +76,8 @@ public class ICBC_QHB_Req extends RequestObj {
 
 
 	@Override
-	public String post() {
-		return null;
+	public String getTransCode() {
+		return "QHISBAL";
 	}
 
 }

@@ -42,7 +42,7 @@ public class ICBCTest {
 		request.setAcctno("12345");
 		request.setCurrno("CNY");
 		request.setBeginDate("20151127");
-		request.setEndDate("20151126");
+		request.setEndDate("20151128");
 		String xml = request.gerneateXML();
 		System.out.println(xml);
 		assertNotNull(xml);
@@ -51,7 +51,6 @@ public class ICBCTest {
 		assertEquals(getValueFromXML(xml, "CurrType"), "CNY");
 		assertEquals(getValueFromXML(xml, "BeginDate"), "20151127");
 		assertEquals(getValueFromXML(xml, "EndDate"), "20151128");
-		
 	}
 
 	

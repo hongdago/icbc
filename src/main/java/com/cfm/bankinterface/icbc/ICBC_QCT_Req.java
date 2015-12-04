@@ -154,9 +154,8 @@ public class ICBC_QCT_Req extends RequestObj {
 
 
 	@Override
-	public String post() {
-		// TODO Auto-generated method stub
-		return null;
+	public String getTransCode() {
+		return "QPD";
 	}
 
 }

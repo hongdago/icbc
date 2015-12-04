@@ -5,7 +5,7 @@
 
 <form-validation>
    <formset>
-      <form name="ICBC_QCTRequest">
+      <form name="ICBC_QCT_Req">
          <field property="acctno"  depends="required">
             <arg key="acctno.display"/>
          </field>

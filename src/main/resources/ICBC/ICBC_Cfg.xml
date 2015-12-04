@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config-info>
+	<connect>
+		<entry name="default" ip=" " schem="http" port="111" default>url1</entry>
+		<entry name="sign"    ip=" " schem="http" port="111" default>url1</entry>
+	</connect>
+	<map>
+		<entry default>default</entry>
+		<entry name="com.iis..sign"></entry>
+	</map>
+<!-- 	<schema>http</schema>
+	<port>127.0.0.1</port> -->
+	<ip>8080</ip>
+	<reqURL>
+		<entry key="http1" default>http:...</entry>
+		<entry key="http2">http:...</entry>
+		<entry key="http3">http:...</entry>
+	</reqURL>
+	<extra-info>
+		<entry key="CIS">102</entry>
+		<entry key="BANKCODE">020090004075841</entry>
+		<entry key="CERTID">wangzhikuncQQQ.y.0200</entry>
+	</extra-info>
+</config-info>

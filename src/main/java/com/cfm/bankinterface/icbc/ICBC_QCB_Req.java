@@ -85,29 +85,10 @@ public class ICBC_QCB_Req extends RequestObj {
 		return this.params != null ? this.params.length+"":"0";
 	}
 
-
-
 	@Override
-	public String post() {
-		// TODO Auto-generated method stub
-		return null;
+	public String getTransCode() {
+		return "QACCBAL";
 	}
-	
-	public static void main(String[] args) throws ValidateException{
-		ICBC_QCB_Req request = new ICBC_QCB_Req();
-		AccountInfo[] infos = new AccountInfo[3];
-		infos[0] =  request.new AccountInfo("","CNY");
-		infos[1] =  request.new AccountInfo("444444","CNY");
-		infos[2] =  request.new AccountInfo("333333","CNY");
-		request.setParams(infos);
-		
-		try {
-			DefaultValidatorGroup group = DefaultValidatorGroup.getInstance();
-			request.getvalidate();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		
-	}
+
 
 }

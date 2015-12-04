@@ -1,15 +1,14 @@
-#parse("${BANK}/${BANK}_Base.vm")
 <?xml version="1.0" encoding = "GBK"?>
 <CMS>
 <eb>
 <pub>
 <TransCode>QHISBAL</TransCode>
-<CIS>${CIS}</CIS>
-<BankCode>${BANKCODE}</BankCode>
-<ID>${CERTID}</ID>	
+<CIS>${config.CIS}</CIS>
+<BankCode>${config.BANKCODE}</BankCode>
+<ID>${config.CERTID}</ID>
 <TranDate>${system.tranDate}</TranDate>
 <TranTime>${system.tranTime}</TranTime>
-<fSeqno>${system.seqno}</fSeqno>
+<fSeqno>${seqno}</fSeqno>
 </pub>
 <in>
 <AccNo>${acctno}</AccNo>
