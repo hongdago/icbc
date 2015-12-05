@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config-info>
-	<connect>
-		<entry name="default" ip=" " schem="http" port="111" default>url1</entry>
-		<entry name="sign"    ip=" " schem="http" port="111" default>url1</entry>
-	</connect>
-	<map>
-		<entry default>default</entry>
-		<entry name="com.iis..sign"></entry>
-	</map>
-<!-- 	<schema>http</schema>
-	<port>127.0.0.1</port> -->
-	<ip>8080</ip>
-	<reqURL>
-		<entry key="http1" default>http:...</entry>
-		<entry key="http2">http:...</entry>
-		<entry key="http3">http:...</entry>
-	</reqURL>
+	<server>
+		<linkinfo name="default" schema="http" host="127.0.0.1" port="448">
+			<reqURL path="/adafdafd">
+				<entry key="userId">dahong</entry>
+				<entry key="packageid">{req.id}</entry>
+			</reqURL>
+		</linkinfo>
+		<linkinfo name="sign" schema="http" host="127.0.0.1" port="449"/>
+		<exclude>
+			<entry class="ICBC_QCBReq">sign</entry>
+			<entry class="ICBC_QHBReq">sign</entry>
+		</exclude>
+	</server>
 	<extra-info>
 		<entry key="CIS">102</entry>
 		<entry key="BANKCODE">020090004075841</entry>
